@@ -1,3 +1,11 @@
+# Repository for Custom React Hooks
+
+## Testing useFetch
+
+In order to get around CORS errors, run the proxy server
+
+### `npm run proxy` 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
