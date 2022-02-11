@@ -11,14 +11,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/testing', (req, res) => {
-    console.log('testing...')
-})
-
-// app.get('/drinks/random', async (req, res) => {
-//     console.log('/drinks/random called')
-
-// });
 
 app.get('/drinks/random', (req, res) => {
   request(

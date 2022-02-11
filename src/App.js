@@ -5,14 +5,12 @@ import RenderTest from './components.js/RenderTest';
 import useCountRenders from './hooks/useCountRenders';
 
 function App() {
-  // const [renderCount] = useCountRenders(0)
-
-  // useCountRenders()
+  const [renderCount] = useCountRenders()
 
   return (
     <div className="App">
       <h1>Hello World!</h1>
-      {/* <h3>Times this app has rendered: {renderCount}</h3> */}
+      <h3>Times this app has rendered: {renderCount}</h3>
 
       <RenderTest />
       <CounterTest />

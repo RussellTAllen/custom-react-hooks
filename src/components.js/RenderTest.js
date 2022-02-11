@@ -6,9 +6,9 @@ const RenderTest = () => {
     const [renderCount] = useCountRenders()
     const [text, setText] = useState('')
 
-    const changeSomething = useCallback(() => {
+    const changeSomething = () => {
         setText(prevText => prevText += 'a')
-    }, [])
+    }
 
     return (
         <section>
