@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import CounterTest from './components.js/CounterTest';
+import FetchTest from './components.js/FetchTest';
+import RenderTest from './components.js/RenderTest';
+import useCountRenders from './hooks/useCountRenders';
 
 function App() {
+  // const [renderCount] = useCountRenders(0)
+
+  // useCountRenders()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World!</h1>
+      {/* <h3>Times this app has rendered: {renderCount}</h3> */}
+
+      <RenderTest />
+      <CounterTest />
+      <FetchTest />
     </div>
   );
 }
