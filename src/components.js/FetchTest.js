@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import useFetch from '../hooks/useFetch'
 import FetchMeal from './FetchMeal'
 import FetchDrink from './FetchDrink'
 import useCountRenders from '../hooks/useCountRenders'

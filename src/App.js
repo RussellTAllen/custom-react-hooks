@@ -2,6 +2,7 @@ import './App.css';
 import CounterTest from './components.js/CounterTest';
 import FetchTest from './components.js/FetchTest';
 import RenderTest from './components.js/RenderTest';
+import SearchFilterTest from './components.js/SearchFilterTest';
 import useCountRenders from './hooks/useCountRenders';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       <RenderTest />
       <CounterTest />
       <FetchTest />
+      <SearchFilterTest />
+
     </div>
   );
 }

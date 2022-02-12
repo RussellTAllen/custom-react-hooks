@@ -25,5 +25,18 @@ app.get('/drinks/random', (req, res) => {
   )
 });
 
+app.get('/drinks/all', (req, res) => {
+  request(
+    { url: 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic' },
+    (error, response, body) => {
+      if (error || response.statusCode !== 200) {
+        return res.status(500).json({ type: 'error', message: err.message });
+      }
+
+      res.json(JSON.parse(body));
+    }
+  )
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
